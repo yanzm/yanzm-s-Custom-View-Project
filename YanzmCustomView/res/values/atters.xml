@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="ColorFilteredImageView">
+		<attr name="porterduff_mode" format="string" />
+		<attr name="tint" format="color">
+		</attr>
+	</declare-styleable>
+</resources>

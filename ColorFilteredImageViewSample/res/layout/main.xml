@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:app="http://schemas.android.com/apk/res/yanzm.example.customview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	>
+<LinearLayout    
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_camera"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ImageView\n    normal"
+            />    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_add"
+            android:tint="#ccff0000"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ImageView\n    #ccff0000"
+            />    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_agenda"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    normal"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_compass"
+            android:tint="#ccff0000"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff0000 (android:tint)"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_crop"
+            app:tint="#ccff00ff"        
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_call"
+            app:tint="#ccff00ff"        
+            app:porterduff_mode="CLEAR"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff  CLEAR"
+            />
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_delete"
+            app:tint="#ccff00ff"        
+            app:porterduff_mode="SRC"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff  SRC"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_edit"
+            app:tint="#ccff00ff"        
+            app:porterduff_mode="DST"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff  DST"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_gallery"
+            app:tint="#ccff00ff"        
+            app:porterduff_mode="SRC_OVER"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff  SRC_OVER"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_help"
+            app:tint="#ccff00ff"        
+            app:porterduff_mode="DST_OVER"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff  DST_OVER"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_upload"
+            app:tint="#ccff00ff"        
+            app:porterduff_mode="SRC_IN"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff  SRC_IN"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_info_details"
+            app:tint="#ccff00ff"        
+            app:porterduff_mode="DST_IN"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff  DST_IN"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_manage"
+            app:tint="#ccff00ff"        
+            app:porterduff_mode="SRC_OUT"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff  SRC_OUT"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_more"
+            app:tint="#ccff00ff"        
+            app:porterduff_mode="DST_OUT"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff  DST_OUT"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_mylocation"
+            app:tint="#ccff00ff"        
+            app:porterduff_mode="SRC_ATOP"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff  SRC_ATOP"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_preferences"
+            app:tint="#ccff00ff"        
+            app:porterduff_mode="DST_OUT"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff  DST_OUT"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_save"
+            app:tint="#ccff00ff"        
+            app:porterduff_mode="XOR"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff  XOR"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_search"
+            app:tint="#ccff00ff"        
+            app:porterduff_mode="DARKEN"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff  DARKEN"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_send"
+            app:tint="#ccff00ff"        
+            app:porterduff_mode="LIGHTEN"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff  LIGHTEN"
+            />
+    </LinearLayout>
+   
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_share"
+            app:tint="#ccff00ff"        
+            app:porterduff_mode="MULTIPLY"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff  MULTIPLY"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_today"
+            app:tint="#ccff00ff"        
+            app:porterduff_mode="SCREEN"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #ccff00ff  SCREEN"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_zoom"
+            app:tint="#33ffffff"        
+            app:porterduff_mode="DARKEN"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #33ffffff,  DARKEN"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        >
+        <yanzm.products.customview.ColorFilteredImageView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:src="@android:drawable/ic_menu_week"
+            app:tint="#33ffffff"        
+            app:porterduff_mode="LIGHTEN"
+            />
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="ColorFilteredImageView\n    #33ffffff,  LIGHTEN"
+            />
+    </LinearLayout>    
+    
+</LinearLayout>
+</ScrollView>
