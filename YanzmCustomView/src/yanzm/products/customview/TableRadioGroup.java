@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2011 The yanzm Custom View Project
- * 
- * Copyright (C) 2006 The Android Open Source Project
+ *      Yuki Anzai, uPhyca Inc.
+ *      http://www.uphyca.com
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

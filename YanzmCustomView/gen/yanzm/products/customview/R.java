@@ -9,6 +9,37 @@ package yanzm.products.customview;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int checkMark=0x7f010005;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int checked=0x7f010004;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color=0x7f010002;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int drawablePadding=0x7f010006;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -17,6 +48,17 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int porterduff_mode=0x7f010000;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>left</code></td><td>0</td><td></td></tr>
+<tr><td><code>right</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int position=0x7f010003;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -26,6 +68,17 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int tint=0x7f010001;
+    }
+    public static final class drawable {
+        public static final int icon=0x7f020000;
+    }
+    public static final class id {
+        public static final int customCheckedTextView1=0x7f040002;
+        public static final int left=0x7f040000;
+        public static final int right=0x7f040001;
+    }
+    public static final class layout {
+        public static final int main=0x7f030000;
     }
     public static final class styleable {
         /** Attributes that can be used with a ColorFilteredImageView.
@@ -72,5 +125,109 @@ containing a value of this type.
           @attr name android:tint
         */
         public static final int ColorFilteredImageView_tint = 1;
+        /** Attributes that can be used with a ColorPickerView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ColorPickerView_color yanzm.products.customview:color}</code></td><td></td></tr>
+           </table>
+           @see #ColorPickerView_color
+         */
+        public static final int[] ColorPickerView = {
+            0x7f010002
+        };
+        /**
+          <p>This symbol is the offset where the {@link yanzm.products.customview.R.attr#color}
+          attribute's value can be found in the {@link #ColorPickerView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:color
+        */
+        public static final int ColorPickerView_color = 0;
+        /** Attributes that can be used with a CustomCheckedTextView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CustomCheckedTextView_checkMark yanzm.products.customview:checkMark}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomCheckedTextView_checked yanzm.products.customview:checked}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomCheckedTextView_drawablePadding yanzm.products.customview:drawablePadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomCheckedTextView_position yanzm.products.customview:position}</code></td><td></td></tr>
+           </table>
+           @see #CustomCheckedTextView_checkMark
+           @see #CustomCheckedTextView_checked
+           @see #CustomCheckedTextView_drawablePadding
+           @see #CustomCheckedTextView_position
+         */
+        public static final int[] CustomCheckedTextView = {
+            0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006
+        };
+        /**
+          <p>This symbol is the offset where the {@link yanzm.products.customview.R.attr#checkMark}
+          attribute's value can be found in the {@link #CustomCheckedTextView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:checkMark
+        */
+        public static final int CustomCheckedTextView_checkMark = 2;
+        /**
+          <p>This symbol is the offset where the {@link yanzm.products.customview.R.attr#checked}
+          attribute's value can be found in the {@link #CustomCheckedTextView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:checked
+        */
+        public static final int CustomCheckedTextView_checked = 1;
+        /**
+          <p>This symbol is the offset where the {@link yanzm.products.customview.R.attr#drawablePadding}
+          attribute's value can be found in the {@link #CustomCheckedTextView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:drawablePadding
+        */
+        public static final int CustomCheckedTextView_drawablePadding = 3;
+        /**
+          <p>This symbol is the offset where the {@link yanzm.products.customview.R.attr#position}
+          attribute's value can be found in the {@link #CustomCheckedTextView} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>left</code></td><td>0</td><td></td></tr>
+<tr><td><code>right</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name android:position
+        */
+        public static final int CustomCheckedTextView_position = 0;
     };
 }
