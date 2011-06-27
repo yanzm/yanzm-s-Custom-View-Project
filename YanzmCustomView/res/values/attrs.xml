@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="ColorFilteredImageView">
+		<attr name="porterduff_mode" format="string" />
+		<attr name="tint" format="color"/>
+	</declare-styleable>
+
+    <declare-styleable name="ColorPickerView">
+		<attr name="color" format="color"/>
+	</declare-styleable>
+	
+    <declare-styleable name="CustomCheckedTextView">
+		<attr name="position">
+		    <enum name="left" value="0" />
+		    <enum name="right" value="1" />
+		</attr>
+		<attr name="checked" format="boolean" />
+		<attr name="checkMark" format="reference" />
+		<attr name="drawablePadding" format="dimension" />
+	</declare-styleable>	
+</resources>

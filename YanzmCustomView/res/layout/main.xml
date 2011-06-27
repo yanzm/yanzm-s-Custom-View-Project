@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/yanzm.products.customview"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  
+    <yanzm.products.customview.CustomCheckedTextView 
+        android:text="CustomCheckedTextView" 
+        android:layout_width="fill_parent" 
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dip"
+        android:paddingRight="6dip"        
+        app:checkMark="?android:attr/textCheckMark"
+        app:checked="true"
+        />
+         
+    <yanzm.products.customview.CustomCheckedTextView 
+        android:text="CustomCheckedTextView" 
+        android:layout_width="fill_parent" 
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dip"
+        android:paddingRight="6dip"        
+        app:checkMark="?android:attr/textCheckMark"
+        app:checked="true"
+        app:drawablePadding="10dip"
+        />
+         
+         
+    <yanzm.products.customview.CustomCheckedTextView 
+        android:text="CustomCheckedTextView" 
+        android:layout_width="fill_parent" 
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center_vertical"
+        android:paddingLeft="40dip"
+        android:paddingRight="6dip"        
+        app:checkMark="?android:attr/textCheckMark"
+        app:checked="true"
+        app:position="right"
+         />
+         
+    <yanzm.products.customview.CustomCheckedTextView 
+        android:text="CustomCheckedTextView" 
+        android:id="@+id/customCheckedTextView1" 
+        android:layout_width="fill_parent" 
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center_vertical"
+        android:paddingLeft="40dip"
+        android:paddingRight="6dip"        
+        app:checkMark="?android:attr/textCheckMark"
+        app:checked="true"
+        app:position="right"
+        app:drawablePadding="30dip"
+        />         
+         
+    <CheckedTextView 
+        android:text="CustomCheckedTextView" 
+        android:id="@+id/customCheckedTextView1" 
+        android:layout_width="fill_parent" 
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center_vertical"
+        android:checkMark="?android:attr/textCheckMark"
+        android:paddingLeft="40dip"
+        android:paddingRight="6dip"        
+        android:checked="true"
+        />
+         
+</LinearLayout>
